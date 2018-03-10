@@ -7,7 +7,7 @@ Array.from(thumbUp).forEach(function(element) {
     const name = this.parentNode.parentNode.childNodes[1].innerText
     const msg = this.parentNode.parentNode.childNodes[3].innerText
     const thumbUp = parseFloat(this.parentNode.parentNode.childNodes[5].innerText)
-    fetch('messages', {
+    fetch('thumbUp', {
         method: 'put',
         headers: {
           'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ Array.from(thumbDown).forEach(function(element) {
     const name = this.parentNode.parentNode.childNodes[1].innerText
     const msg = this.parentNode.parentNode.childNodes[3].innerText
     const thumbDown = parseFloat(this.parentNode.parentNode.childNodes[7].innerText)
-    fetch('messages', {
+    fetch('thumbDown', {
         method: 'put',
         headers: {
           'Content-Type': 'application/json'
@@ -42,6 +42,7 @@ Array.from(thumbDown).forEach(function(element) {
         body: JSON.stringify({
           'name': name,
           'msg': msg,
+          'thumbUp': thumbUp,
           'thumbDown': thumbDown
         })
       })
