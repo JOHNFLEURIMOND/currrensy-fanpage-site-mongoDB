@@ -57,12 +57,11 @@ button:hover {
 h1, h3, h2, form {
   position: relative;
   font-size: 1em;
-  padding: .2em .7em;
   top: 20em;
   left: 44em;
 }
 
-ul li, {
+ul li {
   position: relative;
   font-size: 1em;
   padding: .2em .7em;
