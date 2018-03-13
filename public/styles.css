@@ -54,12 +54,20 @@ button:hover {
   background-image: url("../img/suwoo.png");
 } */
 
-h1, h3, h2, ul li, form {
+h1, h3, h2, form {
   position: relative;
   font-size: 1em;
   padding: .2em .7em;
-  top: 2em;
-  left: 34em;
+  top: 20em;
+  left: 44em;
+}
+
+ul li, {
+  position: relative;
+  font-size: 1em;
+  padding: .2em .7em;
+  top: 20em;
+  left: 20em;
 }
 
 h3 {
