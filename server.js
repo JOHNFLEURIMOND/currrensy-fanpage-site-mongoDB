@@ -5,11 +5,11 @@ const MongoClient = require('mongodb').MongoClient
 
 var db
 
-MongoClient.connect('mongodb://demo:demo@ds125146.mlab.com:25146/savage', (err, database) => {
+MongoClient.connect('mongodb://godsplan:MiltonMass2018@ds039195.mlab.com:39195/to-do', (err, database) => {
   if (err) return console.log(err)
   db = database
   app.listen(process.env.PORT || 3000, () => {
-    console.log('listening on 3000')
+    console.log('What It Look Like?!')
   })
 })
 
