@@ -21,7 +21,7 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  db.collection('messages').find().toArray((err, result) => {
+  db.collection('jetlife').find().toArray((err, result) => {
     if (err) return console.log(err)
     res.render('index.ejs', {
       messages: result
@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/messages', (req, res) => {
-  db.collection('messages').save({
+  db.collection('jetlife').save({
     name: req.body.name,
     msg: req.body.msg,
     thumbUp: 0,
@@ -43,7 +43,7 @@ app.post('/messages', (req, res) => {
 })
 
 app.put('/thumbUp', (req, res) => {
-  db.collection('messages')
+  db.collection('jetlife')
     .findOneAndUpdate({
       name: req.body.name,
       msg: req.body.msg
@@ -63,7 +63,7 @@ app.put('/thumbUp', (req, res) => {
 })
 
 app.put('/thumbDown', (req, res) => {
-  db.collection('messages')
+  db.collection('jetlife')
     .findOneAndUpdate({
       name: req.body.name,
       msg: req.body.msg
@@ -83,7 +83,7 @@ app.put('/thumbDown', (req, res) => {
 })
 
 app.delete('/messages', (req, res) => {
-  db.collection('messages').findOneAndDelete({
+  db.collection('jetlife').findOneAndDelete({
     name: req.body.name,
     msg: req.body.msg
   }, (err, result) => {
