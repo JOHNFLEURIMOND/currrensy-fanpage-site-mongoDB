@@ -1,4 +1,4 @@
-![21 Savage](img/21.png)
+![JET LIFE TO THE NEXT LIFE](img/curren$y.jpg)(img/curren$y.jpg)
 
 # My Awesome Project
 This is an simple to-do list application that allows you to keep track of things within a list, focusing on how to use CRUD, Express and Mongo DB, so, more server-side stuff. This being the first time I was setting up my first database and only having experience with the front end, I was really intimidating but with my previous experience in JavaScript and using Node allows you to use JavaScript as your server-side language.
@@ -19,24 +19,13 @@ No matter what my experience level, being an engineer means continuously learnin
 **WEBSITE:** https:/johnfleurimond.com
 
 
-
 ## Installation
 
 1. Clone repo
 2. run `npm install`
+3. run `npm install nodemon`
 
 ## Usage
 
-1. run `npm todo`
-2. Navigate to `localhost:3000`
-
-
-## Installation
-
-1. Clone repo
-2. run `npm install`
-
-## Usage
-
-1. run `npm run savage`
+1. run `npm run jetlife`
 2. Navigate to `localhost:3000`
