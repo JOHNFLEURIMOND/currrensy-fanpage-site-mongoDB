@@ -48,8 +48,8 @@ app.put('/thumbUp', (req, res) => {
       name: req.body.name,
       msg: req.body.msg
     }, {
-      $set: {
-        thumbUp: req.body.thumbUp + 1
+      $inc: {
+        thumbUp: 1
       }
     }, {
       sort: {
@@ -58,7 +58,7 @@ app.put('/thumbUp', (req, res) => {
       upsert: true
     }, (err, result) => {
       if (err) return res.send(err)
-      res.send(result)
+      res.send("thumbsUp" + req.body.thumb + 1)
     })
 })
 
@@ -68,8 +68,8 @@ app.put('/thumbDown', (req, res) => {
       name: req.body.name,
       msg: req.body.msg
     }, {
-      $set: {
-        thumbDown: req.body.thumbDown + 1
+      $inc: {
+        thumbDown: 1
       }
     }, {
       sort: {
@@ -78,7 +78,7 @@ app.put('/thumbDown', (req, res) => {
       upsert: true
     }, (err, result) => {
       if (err) return res.send(err)
-      res.send(result)
+      res.send("thumbsDown" + req.body.thumb + 1)
     })
 })
 

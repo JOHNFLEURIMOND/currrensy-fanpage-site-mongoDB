@@ -19,7 +19,7 @@ Array.from(thumbUp).forEach(function(element) {
         })
       })
       .then(response => {
-        if (response.ok) return response.json()
+        if (response.ok) return response
       })
       .then(data => {
         console.log(data)
@@ -47,7 +47,7 @@ Array.from(thumbDown).forEach(function(element) {
         })
       })
       .then(response => {
-        if (response.ok) return response.json()
+        if (response.ok) return response
       })
       .then(data => {
         console.log(data)
