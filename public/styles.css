@@ -58,24 +58,16 @@ button:hover {
 } */
 
 form {
-  position: relative;
   font-size: 1em;
-  top: 10em;
-  left: 34em;
 }
 
 ul li {
-  position: relative;
   font-size: 1em;
   padding: .2em .7em;
-  top: 10em;
-  left: 10em;
 }
 
 h1, h3, h2 {
-  position: relative;
   font-size: 38px;
-  top: 1em;
   text-align: center;
 }
 
